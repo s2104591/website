@@ -1,0 +1,151 @@
+
+/*
+       By Mariano Rico s2104591
+	   Some content from Shekhar Kalra
+             
+
+*/
+
+
+       body {
+           margin: 20px 80px 80px 80px;        
+        }
+
+		 footer a {
+			color:#fff;
+			font-size: 0.60em;		
+		}
+		
+		.email {
+			color:#0f0;
+		}
+		
+		video{
+			margin=0;
+		}
+		
+		.attribute{
+			font-size:0.7em;
+		}
+
+
+        .top {
+            grid-area: top;
+            background-color: #87CEFA;
+			padding: 1%;
+			
+			
+        }
+
+        .content {
+            grid-area: content;
+			position: relative;
+             
+            background-color: rgb(250, 250, 250);
+			padding: 5%;
+        }
+ 
+
+        .nav {
+            grid-area: nav;
+            background-color: rgb(0, 200, 0);
+			padding: 2%;
+			color: #000;
+        }
+		
+		.title{
+			color:#000;
+			margin-left: 20%;
+			font-size: 1.5em;
+			
+		}
+		.videotext{
+			float:right; 
+			font-size:0.7em;
+		}
+
+		.sitemap{
+			color: #000;
+		}
+			
+
+
+ 
+        .footer {
+            grid-area: footer;
+            background-color: #fa0;
+			padding: 2%;
+        }
+
+        .wrapper {
+            display: grid;
+            grid-gap: 2px;
+            grid-template-columns: 35% 35% 30%;
+            grid-template-rows: 20% 65% 15%;
+            grid-template-areas:
+			"top  top  top"
+			"content content content"
+			"content content content";
+                
+            background-color: #fff;
+            color: #444;
+
+            
+            position: absolute;
+            width: 80%;
+            height: 90%;
+            
+        }
+
+
+        .box {
+            
+            color: #000;
+            border-radius: 5px;
+			font-size: 120%;
+            
+            /* 
+            padding: 80px 400px 80px 400px;
+
+            */
+            
+        }
+		
+		/*
+	    #regform .error{
+			color: red;
+			font-size: 12px;
+			margin-left: 0px;
+			
+		}
+		*/
+
+		.error{
+			color: red;
+			font-size: 15px;
+			margin-left: 0px;
+			
+		}
+
+		#contactdetails a{
+			font-size:0.7em;
+			color:yellow;
+
+			display:block; 
+			margin-left:180px"
+
+		}
+
+		
+		
+
+		.label {
+			float: left;
+			width: 200px;
+			font-size:1em;
+		}
+		
+		#membercost{
+		    font-size:0.6em;	
+		}
+

@@ -1,0 +1,136 @@
+
+<!doctype html>
+<html>
+
+<head>
+    <title>CSS box properties</title>
+    <meta name="keywords" content="CSS grid layout">
+    <meta name="author" content="Mariano Rico">
+    <meta http-equiv="Content-Type" content="text/html; charset = UTF-8">
+	
+	<link rel="stylesheet" type="text/css" href="../styles/mystyles.css" >
+	<script src="../scripts/myscript.js"></script>
+
+ 
+	
+</head>
+
+<!--
+
+-->
+
+<form id="regform" onsubmit="return checkRegForm()" method="post" action="">
+<body>
+    <div class="wrapper">
+	
+	
+        <header class="box top">
+		    <!-- References 
+			free images obtained from https://www.pexels.com 
+			-->
+		   <image src="../assets/images/icon.png" width="80" height="80" alt="logan image" > 
+		
+		   <span class="title">LIFE Living it Fully Everyday</span>
+		</header>
+        
+					
+        <main class="box content">
+		    <!-- References 
+			free gif image obtained from www.giphy.com 
+			https://giphy.com/gifs/sport-gymondo-sehsuchtsehsucht-berlin-3o7WTIHPzEIqJIMryU 
+			-->
+			<div id="gifregister">
+			<img  src="../assets/images/giphyregister.gif" width="240" height="180" alt="animation"> 
+			<br/>
+			<span class="attribute">Attribute: www.giphy.com</span>
+			</div>
+		
+			<div><span class="label" >First Name:</span><input name="firstname" type="text" value="" id="firstname" ></div>
+			<div class="error" id="firstnameError" style="display: none;">Required: Please enter your first name</div>
+				
+			<div><span class="label" width="300">Surname:</span><input name="surname" type="text" value="" id="surname" ></div>
+			<div class="error" id="surnameError" style="display: none;">Required: Please enter your surname</div>
+				
+			<div><span class="label">Email:</span><input name="email" type="text" value="" id="email"></div>
+			<div class="error" id="emailError" style="display: none;"> Required: Please enter a valid email</div>
+
+			<div><span class="label">Confirm Email:</span><input name="emailconfirm" type="text" value="" id="emailconfirm"></div>
+			<div class="error" id="emailconfirmError" style="display: none;"> Emails do not match</div>
+			
+			<div><span class="label">Phone:</span><input name="phone" type="text" value="" id="phone"></div>
+			<div class="error" id="phoneError" style="display: none;"> Enter a correct phone, min length is 8, no spaces</div>
+			
+			<br/>
+			<div class="slidecontainer"> Specify Age Please:
+      		
+				<input type="range" min="16" max="100" value="21" class="slider" id="myAge">
+				<span id="demo"></span> Years Old  
+		
+			</div>
+			
+			 <div > 
+				<label for="student">Student(Yes/No):</label>
+				<input type="checkbox" id="student" name="student" > 
+				
+				&nbsp;&nbsp;
+				<label for="employed">Employed(Yes/No):</label>
+				<input type="checkbox" id="employed" name="employed" checked="checked" > 
+			</div>
+
+			
+
+			
+		     
+		   
+			<br/><input id="registration_submit" type="submit" value="Submit Here">
+			 &nbsp;
+			 <button type="button" onClick="getMembershipCost();">Calculate Membership</button>
+			
+			<span id="membercost"></span> 
+
+		
+		</main>
+        
+
+
+		<nav class="box nav">
+		     
+		    <ul> 
+			<li><a href="../index.html">Home </a></li><br/>
+			<li><a href="../html/yoga.html">Services Yoga </a></li><br/>
+			<li><a href="../html/meditation.html">Services Meditation </a></li><br/>
+			<li><a href="../html/stretches.html">Services Stretches </a></li><br/>
+			<li><a href="../html/healthy.html">Services Healthy Habits </a></li><br/>
+			</ul>
+		</nav>
+
+		<footer class="box footer">
+		   
+			<a target="_blank" href="https://www.health.gov.au/resources/collections/novel-coronavirus-2019-ncov-resources" >Covid 19 Resources</a> &nbsp &nbsp
+			<a href="contactus.html" >Contact us  </a> &nbsp &nbsp
+			<a target="_blank" href="sitemap.html" >Site map </a> &nbsp &nbsp
+			<a href="registration.html" >Register Here </a> &nbsp &nbsp
+		
+		  
+		</footer>
+
+
+
+    </div>
+
+</body>
+
+<script>
+			
+		var sliderA = document.getElementById("myAge");
+		var outputA = document.getElementById("demo");
+		outputA.innerHTML = sliderA.value;
+
+		sliderA.oninput = function() {
+		  outputA.innerHTML = this.value;
+		}
+</script>
+
+</form>
+</html>
+
